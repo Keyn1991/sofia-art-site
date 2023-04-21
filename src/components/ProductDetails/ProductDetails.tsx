@@ -1,12 +1,23 @@
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import { Image } from '../Gallery';
-import React from 'react'; // Import the Image interface from the Gallery component
+import React from 'react';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
-interface ImageDetailsProps {
+interface Image {
+  id: number;
+  title: string;
+  description: string;
+  url: string;
+}
+
+interface ProductDetailsProps {
   image: Image;
 }
 
-const ProductDetails: React.FC<ImageDetailsProps> = ({ image }) => {
+const ProductDetails: React.FC<ProductDetailsProps> = ({ image }) => {
+  const navigate = useNavigate();
+  const handleDetailsClick = () => {
+    navigate('/');
+  };
   return (
     <Container>
       <Row>
@@ -19,6 +30,9 @@ const ProductDetails: React.FC<ImageDetailsProps> = ({ image }) => {
           <h2>{image.title}</h2>
           <p>{image.description}</p>
         </Col>
+        <Button variant="success" onClick={() => handleDetailsClick()}>
+          Back
+        </Button>
       </Row>
     </Container>
   );

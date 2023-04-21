@@ -1,17 +1,18 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header/Header';
-import { images } from './pages/Products/Product';
 
-import { Footer } from './components/Footer';
-import { Gallery } from './components/Gallery';
+import { Home } from './pages/Home';
+import { Route, Routes } from 'react-router-dom';
+
+import { ProductDetailsPage } from './pages/ProductDetailsPage';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Gallery images={images} />
-      <Footer />
+      <Routes>
+        <Route path={'/'} element={<Home />} />
+        <Route path={'/image/:id'} element={<ProductDetailsPage />} />
+      </Routes>
     </div>
   );
 }

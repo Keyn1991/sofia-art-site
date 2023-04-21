@@ -1,6 +1,7 @@
 .card {
     transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
     /* Додали перехід для тіні */
+
 }
 
 .card:hover {

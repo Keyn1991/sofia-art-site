@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Nav, Navbar } from 'react-bootstrap';
-
+import styles from './Header.module.css';
 const getAccessLevel = (): string => {
   // your code for getting the current access level of the user
   return 'admin'; // for example
@@ -10,32 +10,32 @@ const Header: React.FC = () => {
   const accessLevel = getAccessLevel();
 
   return (
-    <header>
+    <header className={styles.header}>
       <Navbar bg="light" expand="lg" className="shadow-sm py-3 ms-2">
         <Navbar.Brand href="#" className="font-weight-bold text-uppercase">
-          Мій сайт
+          Sofia-Arts
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#" className="text-dark me-3">
-              Головна
+              Home
             </Nav.Link>
             <Nav.Link href="#" className="text-dark me-3">
-              Про нас
+              About
             </Nav.Link>
             <Nav.Link href="#" className="text-dark me-3">
-              Контакти
+              Contact
             </Nav.Link>
           </Nav>
           <Nav className="me-3">
             {accessLevel === 'admin' && (
               <Nav.Link href="#" className="text-dark me-3">
-                Адмін панель
+                Admin
               </Nav.Link>
             )}
             <Button variant="success" className="rounded-pill px-4">
-              Увійти
+              Log in
             </Button>
           </Nav>
         </Navbar.Collapse>

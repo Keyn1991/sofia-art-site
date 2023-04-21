@@ -8,3 +8,6 @@ export interface Image {
 export interface GalleryProps {
   images: Image[];
 }
+export interface ProductDetailsProps {
+  image: Image;
+}

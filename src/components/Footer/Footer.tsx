@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container, Col, Row, Nav } from 'react-bootstrap';
-
+import styles from './Footer.module.css';
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light py-3 mr-auto">
+    <footer className={`${styles.footer} bg-dark text-light py-3 mr-auto`}>
       <Container>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center mt-auto">
           <Col md={4}>
             <h5>Kontakt</h5>
             <Nav className="flex-column">
@@ -15,7 +15,7 @@ const Footer = () => {
             </Nav>
           </Col>
           <Col md={4}>
-            <h5>Посилання</h5>
+            <h5>Link</h5>
             <Nav className="flex-column">
               <Nav.Link href="#">Home</Nav.Link>
               <Nav.Link href="#">About</Nav.Link>

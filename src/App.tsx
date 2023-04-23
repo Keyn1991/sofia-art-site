@@ -5,7 +5,7 @@ import { Home } from './pages/Home';
 import { Route, Routes } from 'react-router-dom';
 
 import { ProductDetailsPage } from './pages/ProductDetailsPage';
-import Header from './components/Header/Header';
+import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 
 const App = () => (

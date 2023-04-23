@@ -1,33 +1,32 @@
 .card {
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-    /* Додали перехід для тіні */
-
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  /* Додали перехід для тіні */
 }
 
 .card:hover {
-    border: 12px solid #480202;
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    /* Додали тінь на обрамовку при наведенні */
+  border: 12px solid #480202;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  /* Додали тінь на обрамовку при наведенні */
 }
 .card {
-    position: relative;
+  position: relative;
 }
 
 .card:hover::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border: 2px solid transparent;
-    opacity: 0;
-    z-index: 1;
-    transition: all 0.3s ease-in-out;
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid transparent;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .card:hover::before {
-    border-color: #000e17;
-    opacity: 1;
+  border-color: #000e17;
+  opacity: 1;
 }

@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#" className="text-dark me-3">
+            <Nav.Link href="/" className="text-dark me-3">
               Home
             </Nav.Link>
             <Nav.Link href="#" className="text-dark me-3">
@@ -44,4 +44,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export { Header };

@@ -26,10 +26,12 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
 
   const handlePrevClick = () => {
     setCurrentPage((prevPage) => prevPage - 1);
+    setPageSize(8);
   };
 
   const handleNextClick = () => {
     setCurrentPage((prevPage) => prevPage + 1);
+    setPageSize(8);
   };
 
   const startIndex = (currentPage - 1) * pageSize;

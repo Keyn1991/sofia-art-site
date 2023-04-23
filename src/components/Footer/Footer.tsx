@@ -15,7 +15,7 @@ const Footer = () => {
             </Nav>
           </Col>
           <Col md={4}>
-            <h5>Link</h5>
+            <h5>Linkya</h5>
             <Nav className="flex-column">
               <Nav.Link href="#">Home</Nav.Link>
               <Nav.Link href="#">About</Nav.Link>

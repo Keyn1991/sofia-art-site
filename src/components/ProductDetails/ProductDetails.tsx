@@ -33,7 +33,6 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ image }) => {
                 },
                 lensStyle: { backgroundColor: 'rgba(0,0,0,.6)' },
                 enlargedImageStyle: { zIndex: 9999 },
-
               }}
             />
           </Col>

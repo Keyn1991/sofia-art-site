@@ -10,4 +10,5 @@ export interface GalleryProps {
 }
 export interface ProductDetailsProps {
   image: Image;
+
 }

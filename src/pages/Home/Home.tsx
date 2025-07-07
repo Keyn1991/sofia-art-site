@@ -55,7 +55,7 @@ const images = [
 
 const Home = () => {
   const location = useLocation();
-//1
+
   return (
     <div>
       <h1 className="mb-4 text-center">Our paintings</h1>
